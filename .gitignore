@@ -3,3 +3,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 Desktop.ini
+temp.html
+project.md
+DESIGN_TOKENS.md
