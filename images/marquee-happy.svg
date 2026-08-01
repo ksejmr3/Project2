@@ -1,0 +1,26 @@
+<svg width="168" height="76" viewBox="0 0 168 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="Badge/Happy">
+        <g id="Badge Background" filter="url(#filter0_di_1_2624)">
+            <ellipse cx="83.7856" cy="36.2162" rx="77.2685" ry="27.1871" transform="rotate(6.85647 83.7856 36.2162)" fill="#8FC31F" />
+        </g>
+        <path id="Badge Label" d="M40.8807 40.6266L43.1251 21.9609L47.5079 22.4879L46.6027 30.0161L54.1051 30.9182L55.0103 23.39L59.3931 23.917L57.1487 42.5827L52.7659 42.0557L53.6742 34.5018L46.1718 33.5997L45.2635 41.1536L40.8807 40.6266ZM62.5319 43.23L57.7881 42.6596L66.3747 24.7565L72.2013 25.4571L76.2733 44.8823L71.5553 44.315L70.7726 40.167L64.2757 39.3858L62.5319 43.23ZM65.7357 36.1613L70.1185 36.6883L68.8105 29.731L68.6558 29.7124L65.7357 36.1613ZM76.9385 44.9623L79.1829 26.2966L86.8142 27.2142C91.0166 27.7195 93.2785 30.6592 92.8228 34.4491C92.3578 38.3163 89.4243 40.5266 85.1446 40.012L82.025 39.6369L81.3213 45.4893L76.9385 44.9623ZM82.4435 36.1565L84.7639 36.4355C86.8264 36.6835 88.0745 35.6566 88.2853 33.9035C88.4961 32.1503 87.5208 30.9084 85.4583 30.6604L83.1379 30.3814L82.4435 36.1565ZM92.2475 46.8031L94.4919 28.1374L102.123 29.055C106.326 29.5603 108.587 32.5 108.132 36.2899C107.667 40.1571 104.733 42.3674 100.454 41.8528L97.334 41.4777L96.6303 47.3301L92.2475 46.8031ZM97.7525 37.9972L100.073 38.2762C102.135 38.5242 103.383 37.4974 103.594 35.7442C103.805 33.9911 102.83 32.7492 100.767 32.5012L98.4469 32.2222L97.7525 37.9972ZM108.821 29.8604L113.745 30.4525L116.825 38.7736L116.98 38.7922L121.944 31.4383L126.842 32.0273L118.551 43.5582L117.792 49.8746L113.409 49.3476L114.168 43.0312L108.821 29.8604Z" fill="white" />
+    </g>
+    <defs>
+        <filter id="filter0_di_1_2624" x="0" y="4.68311" width="167.571" height="71.0659" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="3.5" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2624" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2624" result="shape" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="3.5" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_2624" />
+        </filter>
+    </defs>
+</svg>

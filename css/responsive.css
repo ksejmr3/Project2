@@ -1,0 +1,21 @@
+/* Figma 원본은 1920px 데스크톱 프레임이며 별도 반응형 중단점은 지정되지 않았습니다. */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    .bottom-marquee__track {
+        animation: none !important;
+        transform: translateX(0);
+    }
+}

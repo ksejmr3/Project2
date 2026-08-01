@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>케이벨로</title>
+        <link rel="icon" href="images/header-logo-main.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <p id="skipNav">
+            <a href="#content">본문 바로가기</a>
+        </p>
+
+        <div id="wrap">
+            <header id="header" class="header">
+                <div class="header__inner">
+                    <button class="header__menu-button" type="button" aria-pressed="false">
+                        <img class="header__menu-icon" src="images/header-menu.svg" alt="" width="13" height="12" />
+                        <span class="header__menu-label">MENU</span>
+                    </button>
+
+                    <a class="header__logo" href="#" aria-label="케이벨로 홈">
+                        <span class="header__logo-symbol">
+                            <img src="images/header-logo-main.svg" alt="" width="65" height="47" />
+                        </span>
+                        <span class="header__logo-wordmark">
+                            <img src="images/header-logo-wordmark.svg" alt="" width="30" height="8" />
+                        </span>
+                    </a>
+
+                    <nav class="header__utility" aria-label="사용자 메뉴">
+                        <a class="header__utility-link" href="#">로그인</a>
+                        <a class="header__utility-link" href="#">회원가입</a>
+                        <a class="header__utility-link" href="#">예약확인</a>
+
+                        <div class="header__language">
+                            <button class="header__language-button" type="button" aria-label="언어 선택" aria-haspopup="true" aria-expanded="false" aria-controls="languageSelector">
+                                <img src="images/header-language.svg" alt="" width="24" height="24" />
+                            </button>
+
+                            <div id="languageSelector" class="header__language-selector" role="group" aria-label="언어 선택" hidden>
+                                <button class="header__language-option is-selected" type="button" data-language="ko" aria-pressed="true">KO</button>
+                                <button class="header__language-option" type="button" data-language="en" aria-pressed="false">EN</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <nav class="category-nav" aria-label="주요 카테고리">
+                <ul class="category-nav__list">
+                    <li class="category-nav__item">
+                        <button class="category-nav__button" type="button" aria-pressed="false">
+                            <span class="category-nav__icon">
+                                <img src="images/category-domestic.svg" alt="" width="37" height="49" />
+                            </span>
+                            <span class="category-nav__label">국내여행</span>
+                        </button>
+                    </li>
+                    <li class="category-nav__divider" aria-hidden="true">
+                        <img src="images/category-divider.svg" alt="" width="1" height="55" />
+                    </li>
+                    <li class="category-nav__item">
+                        <button class="category-nav__button" type="button" aria-pressed="false">
+                            <span class="category-nav__icon">
+                                <img src="images/category-overseas.svg" alt="" width="48" height="49" />
+                            </span>
+                            <span class="category-nav__label">해외여행</span>
+                        </button>
+                    </li>
+                    <li class="category-nav__divider" aria-hidden="true">
+                        <img src="images/category-divider.svg" alt="" width="1" height="55" />
+                    </li>
+                    <li class="category-nav__item">
+                        <button class="category-nav__button is-selected" type="button" aria-pressed="true">
+                            <span class="category-nav__icon">
+                                <img src="images/category-event.svg" alt="" width="65" height="41" />
+                            </span>
+                            <span class="category-nav__label">자전거행사</span>
+                        </button>
+                    </li>
+                    <li class="category-nav__divider" aria-hidden="true">
+                        <img src="images/category-divider.svg" alt="" width="1" height="55" />
+                    </li>
+                    <li class="category-nav__item">
+                        <button class="category-nav__button" type="button" aria-pressed="false">
+                            <span class="category-nav__icon">
+                                <img src="images/category-community.svg" alt="" width="50" height="49" />
+                            </span>
+                            <span class="category-nav__label">커뮤니티</span>
+                        </button>
+                    </li>
+                    <li class="category-nav__divider" aria-hidden="true">
+                        <img src="images/category-divider.svg" alt="" width="1" height="55" />
+                    </li>
+                    <li class="category-nav__item">
+                        <button class="category-nav__button" type="button" aria-pressed="false">
+                            <span class="category-nav__icon">
+                                <img src="images/category-strider.svg" alt="" width="50" height="52" />
+                            </span>
+                            <span class="category-nav__label">스트라이더</span>
+                        </button>
+                    </li>
+                    <li class="category-nav__divider" aria-hidden="true">
+                        <img src="images/category-divider.svg" alt="" width="1" height="55" />
+                    </li>
+                    <li class="category-nav__item">
+                        <button class="category-nav__button" type="button" aria-pressed="false">
+                            <span class="category-nav__icon">
+                                <img src="images/category-store.svg" alt="" width="46" height="49" />
+                            </span>
+                            <span class="category-nav__label">스토어</span>
+                        </button>
+                    </li>
+                    <li class="category-nav__divider" aria-hidden="true">
+                        <img src="images/category-divider.svg" alt="" width="1" height="55" />
+                    </li>
+                    <li class="category-nav__item">
+                        <button class="category-nav__button" type="button" aria-pressed="false">
+                            <span class="category-nav__icon">
+                                <img src="images/category-faq.svg" alt="" width="46" height="49" />
+                            </span>
+                            <span class="category-nav__label">자주 묻는 질문</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <main id="content">
+                <section class="hero swiper" aria-labelledby="heroTitle">
+                    <div class="hero__wrapper swiper-wrapper">
+                        <div class="hero__slide swiper-slide">
+                            <img class="hero__image" src="images/hero-main.png" alt="산악 자전거 여행 중 하이파이브를 하는 두 라이더" width="1920" height="848" />
+
+                            <div class="hero__content">
+                                <p class="hero__eyebrow">representative bicycle content specializing company</p>
+                                <h1 id="heroTitle" class="hero__title">
+                                    <span>Make People Happy,</span>
+                                    <span>Keep The Earth Healthy</span>
+                                </h1>
+                                <p class="hero__description">
+                                    케이벨로는 사람을 행복하게 지구를 건강하게 만드는
+                                    <strong>자전거 컨텐츠 전문기업 입니다.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="hero__arrow hero__arrow--prev" type="button" aria-label="이전 배너">
+                        <img src="images/hero-arrow.svg" alt="" width="25" height="44" />
+                    </button>
+                    <button class="hero__arrow hero__arrow--next" type="button" aria-label="다음 배너">
+                        <img src="images/hero-arrow.svg" alt="" width="25" height="44" />
+                    </button>
+
+                    <div class="hero__pagination swiper-pagination" aria-label="배너 페이지"></div>
+
+                    <button class="top-button hero__top-button" type="button" aria-label="페이지 맨 위로 이동">
+                        <img src="images/hero-top-arrow.svg" alt="" width="13" height="22" />
+                        <span>TOP</span>
+                    </button>
+                </section>
+
+                <section class="brand-graphic" aria-label="Bicycle Travel 브랜드 그래픽">
+                    <div class="brand-graphic__wordmark">
+                        <img class="brand-graphic__wordmark-image brand-graphic__wordmark-image--bicycle" src="images/brand-bicycle-wordmark.svg" alt="BICYCLE" width="748" height="155" />
+                        <img class="brand-graphic__accent" src="images/brand-accent-left.svg" alt="" width="43" height="43" />
+                        <span class="brand-graphic__bicycle-image" aria-hidden="true">
+                            <img src="images/brand-bicycle.png" alt="" width="373" height="267" />
+                        </span>
+                        <img class="brand-graphic__accent" src="images/brand-accent-right.svg" alt="" width="43" height="43" />
+                        <img class="brand-graphic__wordmark-image brand-graphic__wordmark-image--travel" src="images/brand-travel-wordmark.svg" alt="TRAVEL" width="730" height="149" />
+                    </div>
+
+                    <img class="brand-graphic__decoration brand-graphic__decoration--graphic-01" src="images/brand-decoration-01.svg" alt="" width="50" height="51" />
+                    <img class="brand-graphic__decoration brand-graphic__decoration--welcome" src="images/brand-badge-welcome.svg" alt="Welcome" width="243" height="66" />
+                    <img class="brand-graphic__decoration brand-graphic__decoration--graphic-02" src="images/brand-decoration-02.svg" alt="" width="56" height="48" />
+                    <img class="brand-graphic__decoration brand-graphic__decoration--happy" src="images/brand-badge-happy.svg" alt="Happy" width="225" height="108" />
+                    <img class="brand-graphic__decoration brand-graphic__decoration--graphic-03" src="images/brand-decoration-03.svg" alt="" width="132" height="48" />
+                    <img class="brand-graphic__decoration brand-graphic__decoration--bicycle" src="images/brand-badge-bicycle.svg" alt="Bicycle" width="167" height="75" />
+                </section>
+
+                <section class="travel-section" aria-labelledby="travelTitle">
+                    <header class="travel-section__header">
+                        <h2 id="travelTitle" class="travel-section__title">여행</h2>
+                        <p class="travel-section__description">
+                            자연을 존중하고 사람과 문화를 존중하는 여행,
+                            <br />
+                            케이벨로와 함께 여러분만의 방식으로 세상을 발견해 보세요.
+                        </p>
+                    </header>
+
+                    <div class="travel-section__products">
+                        <div class="travel-section__products-header">
+                            <h3 class="travel-section__products-title">국내/해외여행</h3>
+                            <a class="view-more-link" href="#">
+                                <img src="images/view-more-arrow.svg" alt="" width="20" height="11" />
+                                <span>VIEW MORE</span>
+                            </a>
+                        </div>
+
+                        <ul class="product-card-list">
+                            <li class="product-card product-card--featured">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/travel-product-01-final.png" alt="홍콩 야경과 대관람차" width="335" height="335" />
+                                            <span class="location-badge location-badge--overseas">해외</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">2026 홍콩 사이클로톤</h4>
+                                                <p class="product-card__date">2026.10.11 ~ 2026.10.13</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>1,850,000</strong>
+                                                <span>원</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="product-card">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/travel-product-02-final-v3.png" alt="단체 라이딩을 하는 자전거 여행 참가자들" width="335" height="335" />
+                                            <span class="location-badge location-badge--domestic">국내</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">2026 테마관광 박람회 자전거 팸투어</h4>
+                                                <p class="product-card__date">2026.06.05 ~ 2026.06.07</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>가격미정</strong>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="product-card">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/travel-product-03-final.png" alt="바닷가에서 자전거를 타는 여성 라이더" width="335" height="335" />
+                                            <span class="location-badge location-badge--domestic">국내</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">2026 양양 쏠비치 스트라이더컵</h4>
+                                                <p class="product-card__date">2026.05.04 ~ 2026.05.05</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>70,000</strong>
+                                                <span>원</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="product-card">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/travel-product-04-final.png" alt="가을 숲길에서 자전거를 타는 가족" width="335" height="335" />
+                                            <span class="location-badge location-badge--domestic">국내</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">광나루 자전거 교실 주말가족교육</h4>
+                                                <p class="product-card__date">2026.04.20 ~ 2026.04.20</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>무료</strong>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="travel-section event-section" aria-labelledby="eventTitle">
+                    <header class="travel-section__header">
+                        <h2 id="eventTitle" class="travel-section__title">자전거행사</h2>
+                        <p class="travel-section__description">
+                            전국 각지에서 열리는 다양한 라이딩 이벤트와 국토종주,
+                            <br />
+                            테마별 라이딩 등 모든 수준의 라이더를 위한 행사를 준비하고 있습니다.
+                        </p>
+                    </header>
+
+                    <div class="travel-section__products">
+                        <div class="travel-section__products-header">
+                            <h3 class="travel-section__products-title">전국 자전거 행사</h3>
+                            <a class="view-more-link" href="#">
+                                <img src="images/view-more-arrow.svg" alt="" width="20" height="11" />
+                                <span>VIEW MORE</span>
+                            </a>
+                        </div>
+
+                        <ul class="product-card-list">
+                            <li class="product-card">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/event-product-01-final.png" alt="산악 코스에서 자전거를 타는 라이더" width="335" height="335" />
+                                            <span class="location-badge location-badge--gangwon">강원</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">2026 이노비즈 자전거 행사 및 야유회</h4>
+                                                <p class="product-card__date">2026.10.11 ~ 2026.10.13</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>210,000</strong>
+                                                <span>원</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="product-card">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/event-product-02-gyeongnam-final.png" alt="자전거 헬멧을 착용한 여성 라이더" width="335" height="335" />
+                                            <span class="location-badge location-badge--gyeongnam">경남</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">2026 문체부 호국보훈 행사</h4>
+                                                <p class="product-card__date">2026.06.05 ~ 2026.06.07</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>무료</strong>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="product-card">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/event-product-03-seoul-final.png" alt="도심 자전거 행사에 참가한 라이더들" width="335" height="335" />
+                                            <span class="location-badge location-badge--seoul">서울</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">2026 테마관광 박람회</h4>
+                                                <p class="product-card__date">2026.05.04 ~ 2026.05.05</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>30,000</strong>
+                                                <span>원</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="product-card">
+                                <article class="product-card__article">
+                                    <a class="product-card__link" href="#">
+                                        <div class="product-card__media">
+                                            <img class="product-card__image" src="images/event-product-04-final.png" alt="숲길을 달리는 산악자전거 라이더" width="335" height="335" />
+                                            <span class="location-badge location-badge--chungcheong">충청</span>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__meta">
+                                                <h4 class="product-card__title">2026 문체부 호국보훈 행사</h4>
+                                                <p class="product-card__date">2026.04.20 ~ 2026.04.20</p>
+                                            </div>
+                                            <p class="product-card__price">
+                                                <strong>무료</strong>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="promotion-banner" aria-label="케이벨로 소개">
+                    <div class="promotion-banner__visual" aria-hidden="true">
+                        <img class="promotion-banner__image" src="images/promotion-banner.png" alt="" width="1920" height="600" />
+                    </div>
+
+                    <div class="promotion-banner__copy">
+                        <p class="promotion-banner__headline">
+                            <strong>자전거 여행의 꿈을 실현</strong>하는 곳.
+                            <br />
+                            <strong>모험을 더욱 특별하게</strong> 만들어 드리는 곳.
+                        </p>
+                        <p class="promotion-banner__description">이 곳은 케이벨로입니다.</p>
+                    </div>
+
+                    <a class="view-more-link view-more-link--filled" href="#">
+                        <img src="images/view-more-arrow.svg" alt="" width="20" height="11" />
+                        <span>VIEW MORE</span>
+                    </a>
+                </section>
+
+                <section class="review-section" aria-labelledby="reviewTitle">
+                    <div class="review-section__sticky">
+                        <div class="review-section__intro">
+                        <div class="review-section__intro-copy">
+                            <h2 id="reviewTitle" class="review-section__title">
+                                라이더들의
+                                <br />
+                                이용후기
+                            </h2>
+                            <p class="review-section__description">
+                                케이벨로와 함께한 자전거 여행의 감동을
+                                <br />
+                                직접 확인해보세요.
+                            </p>
+                        </div>
+                        <a class="view-more-link view-more-link--primary" href="#">
+                            <img src="images/view-more-arrow-white.svg" alt="" width="20" height="11" />
+                            <span>VIEW MORE</span>
+                        </a>
+                        </div>
+
+                        <div class="review-gallery">
+                        <ul class="review-gallery__column review-gallery__column--left">
+                            <li class="review-card">
+                                <a class="review-card__link" href="#">
+                                    <span class="review-card__media">
+                                        <img class="review-card__image" src="images/review-01.png" alt="홍콩 자전거 여행 후기" width="469" height="580" />
+                                    </span>
+                                    <span class="review-card__scrim"></span>
+                                    <span class="review-card__more">VIEW MORE</span>
+                                    <span class="review-card__info">
+                                        <span class="review-card__copy">케이벨로의 홍콩 라이딩 투어를 다녀왔습니다. 너무 만족스러운 프로그램과 즐거운 여행을...</span>
+                                        <span class="review-card__author">홍*길</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="review-card review-card--blue">
+                                <a class="review-card__link" href="#">
+                                    <span class="review-card__media">
+                                        <img class="review-card__image" src="images/review-02.png" alt="자전거 여행 후기" width="469" height="580" />
+                                    </span>
+                                    <span class="review-card__scrim"></span>
+                                    <span class="review-card__more">VIEW MORE</span>
+                                    <span class="review-card__info">
+                                        <span class="review-card__copy">케이벨로의 홍콩 라이딩 투어를 다녀왔습니다. 너무 만족스러운 프로그램과 즐거운 여행을...</span>
+                                        <span class="review-card__author">홍*길</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="review-card review-card--blue">
+                                <a class="review-card__link" href="#">
+                                    <span class="review-card__media">
+                                        <img class="review-card__image" src="images/review-03.png" alt="라이더의 자전거 여행 후기" width="469" height="580" />
+                                    </span>
+                                    <span class="review-card__scrim"></span>
+                                    <span class="review-card__more">VIEW MORE</span>
+                                    <span class="review-card__info">
+                                        <span class="review-card__copy">케이벨로의 홍콩 라이딩 투어를 다녀왔습니다. 너무 만족스러운 프로그램과 즐거운 여행을...</span>
+                                        <span class="review-card__author">홍*길</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="review-card review-card--blue">
+                                <a class="review-card__link" href="#">
+                                    <span class="review-card__media">
+                                        <img class="review-card__image" src="images/review-04.png" alt="단체 자전거 여행 후기" width="469" height="580" style="--review-image-left: -258.86%; --review-image-top: -150.84%; --review-image-width: 372.53%; --review-image-height: 242.41%;" />
+                                    </span>
+                                    <span class="review-card__scrim"></span>
+                                    <span class="review-card__more">VIEW MORE</span>
+                                    <span class="review-card__info">
+                                        <span class="review-card__copy">케이벨로의 홍콩 라이딩 투어를 다녀왔습니다. 너무 만족스러운 프로그램과 즐거운 여행을...</span>
+                                        <span class="review-card__author">홍*길</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="review-gallery__column review-gallery__column--right">
+                            <li class="review-card">
+                                <a class="review-card__link" href="#">
+                                    <span class="review-card__media">
+                                        <img class="review-card__image" src="images/review-05.png" alt="해외 자전거 여행 후기" width="469" height="580" />
+                                    </span>
+                                    <span class="review-card__scrim"></span>
+                                    <span class="review-card__more">VIEW MORE</span>
+                                    <span class="review-card__info">
+                                        <span class="review-card__copy">케이벨로의 홍콩 라이딩 투어를 다녀왔습니다. 너무 만족스러운 프로그램과 즐거운 여행을...</span>
+                                        <span class="review-card__author">홍*길</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="review-card">
+                                <a class="review-card__link" href="#">
+                                    <span class="review-card__media">
+                                        <img class="review-card__image" src="images/review-06.png" alt="자전거 행사 참가 후기" width="469" height="580" />
+                                    </span>
+                                    <span class="review-card__scrim"></span>
+                                    <span class="review-card__more">VIEW MORE</span>
+                                    <span class="review-card__info">
+                                        <span class="review-card__copy">케이벨로의 홍콩 라이딩 투어를 다녀왔습니다. 너무 만족스러운 프로그램과 즐거운 여행을...</span>
+                                        <span class="review-card__author">홍*길</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="review-card review-card--blue">
+                                <a class="review-card__link" href="#">
+                                    <span class="review-card__media">
+                                        <img class="review-card__image" src="images/review-07.png" alt="산악자전거 여행 후기" width="469" height="580" />
+                                    </span>
+                                    <span class="review-card__scrim"></span>
+                                    <span class="review-card__more">VIEW MORE</span>
+                                    <span class="review-card__info">
+                                        <span class="review-card__copy">케이벨로의 홍콩 라이딩 투어를 다녀왔습니다. 너무 만족스러운 프로그램과 즐거운 여행을...</span>
+                                        <span class="review-card__author">홍*길</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bottom-marquee" aria-label="Bicycle Travel">
+                    <div class="bottom-marquee__visual" aria-hidden="true">
+                        <div class="bottom-marquee__track">
+                            <span class="bottom-marquee__text">bicycle travel</span>
+                            <span class="bottom-marquee__text">bicycle travel</span>
+                        </div>
+                        <img class="bottom-marquee__decoration bottom-marquee__decoration--graphic-01" src="images/marquee-decoration-01.svg" alt="" width="187" height="68" />
+                        <span class="bottom-marquee__decoration-frame bottom-marquee__decoration-frame--graphic-02">
+                            <img class="bottom-marquee__decoration bottom-marquee__decoration--graphic-02" src="images/marquee-decoration-02.svg" alt="" width="38" height="83" />
+                        </span>
+                        <img class="bottom-marquee__decoration bottom-marquee__decoration--sun" src="images/marquee-sun.svg" alt="" width="112" height="112" />
+                    </div>
+
+                    <img class="bottom-marquee__happy" src="images/marquee-happy.svg" alt="Happy" width="160" height="72" />
+
+                    <button class="top-button bottom-marquee__top-button" type="button" aria-label="페이지 맨 위로 이동">
+                        <img src="images/hero-top-arrow.svg" alt="" width="13" height="22" />
+                        <span>TOP</span>
+                    </button>
+                </section>
+            </main>
+
+            <footer id="footer" class="footer">
+                <img class="footer__background" src="images/footer-background.svg" alt="" width="1920" height="431" />
+
+                <div class="footer__inner">
+                    <nav class="footer__navigation" aria-label="푸터 메뉴">
+                        <ul class="footer__navigation-list">
+                            <li>
+                                <a class="footer__link" href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="#">이용약관</a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="#">이메일무단수집거부</a>
+                            </li>
+                            <li>
+                                <a class="footer__link" href="#">개인정보처리방침</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <img class="footer__main-divider" src="images/footer-main-divider.svg" alt="" width="1480" height="1" />
+
+                    <div class="footer__content">
+                        <section class="footer__customer-service" aria-labelledby="customerServiceTitle">
+                            <div class="footer__customer-contact">
+                                <h2 id="customerServiceTitle" class="footer__heading">고객센터</h2>
+                                <a class="footer__phone" href="tel:0234466301">02-3446-6301</a>
+                            </div>
+                            <div class="footer__service-buttons">
+                                <a class="footer__service-button" href="#">자주 묻는 질문</a>
+                                <a class="footer__service-button" href="#">Q&amp;A</a>
+                            </div>
+                        </section>
+
+                        <img class="footer__content-divider footer__content-divider--left" src="images/footer-content-divider.svg" alt="" width="1" height="210" />
+
+                        <section class="footer__notice" aria-labelledby="noticeTitle">
+                            <div class="footer__notice-header">
+                                <h2 id="noticeTitle" class="footer__heading">공지사항</h2>
+                                <a class="footer__more-link" href="#">more +</a>
+                            </div>
+                            <ul class="footer__notice-list">
+                                <li>
+                                    <a class="footer__notice-link" href="#">
+                                        <span>스트라이더 참가 결제 진행방법</span>
+                                        <time datetime="2024-08-15">2024.08.15</time>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__notice-link" href="#">
+                                        <span>케이벨로 회원가입 및 이용절차 안내</span>
+                                        <time datetime="2024-08-15">2024.08.15</time>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__notice-link" href="#">
+                                        <span>케이벨로 신규 홈페이지 시범 서비스 운영</span>
+                                        <time datetime="2024-08-15">2024.08.15</time>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="footer__copyright">CopyRight&nbsp;&nbsp;(주)엠비씨아카데미. All Rights Reserved</p>
+                        </section>
+
+                        <img class="footer__content-divider footer__content-divider--right" src="images/footer-content-divider.svg" alt="" width="1" height="210" />
+
+                        <address class="footer__company">
+                            <div class="footer__company-overview">
+                                <div class="footer__company-heading">
+                                    <strong>(주)엠비씨아카데미</strong>
+                                    <span>대표이사 : 김지영</span>
+                                </div>
+                                <p>
+                                    서울특별시 강동구 천중로 8-1 케이벨로빌딩 2층(본사),
+                                    <br />
+                                    지하1층(교육센터)
+                                </p>
+                            </div>
+                            <div class="footer__company-contact">
+                                <p>사업자등록번호 : 215-87-94907</p>
+                                <p class="footer__email-fax">
+                                    <a class="footer__email" href="mailto:kvelo@naver.com">E-mail : kvelo@naver.com</a>
+                                    <span>FAX: 02-3446-6302</span>
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
